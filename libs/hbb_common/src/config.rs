@@ -104,7 +104,7 @@ pub const RENDEZVOUS_SERVERS: &[&str] = &["101.132.132.209"];
 pub const PUBLIC_RS_PUB_KEY: &str = "H3XILnwzhXG3xKM00gi3ZXRLoz1mV+8+JsznAewvigA=";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
-    Some（key） 如果 ！key.is_empty（） => 键，
+   Some(key) if !key.is_empty() => key,
     _ => PUBLIC_RS_PUB_KEY,
 };
 
